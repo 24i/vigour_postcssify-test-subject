@@ -21,17 +21,21 @@
     "Shawn Inder <shawn@vigour.io>"
   ],
   "dependencies": {
+    "postcssify": "^1.0.11",
     "postcssify-test-subject-dep": "git+https://github.com/vigour-io/postcssify-test-subject-dep.git#master",
     "postcssify-test-subject-dep2": "git+https://github.com/vigour-io/postcssify-test-subject-dep2.git#master"
   },
   "engines": {},
   "browserify": {
     "transform": [
-      ["postcssify", {
-        "plugins": [
-          "postcss-cssnext"
-        ]
-      }]
+      [
+        "postcssify",
+        {
+          "plugins": [
+            "postcss-cssnext"
+          ]
+        }
+      ]
     ]
   }
 }
