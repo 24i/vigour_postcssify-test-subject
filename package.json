@@ -24,5 +24,14 @@
     "postcssify-test-subject-dep": "git+https://github.com/vigour-io/postcssify-test-subject-dep.git#master",
     "postcssify-test-subject-dep2": "git+https://github.com/vigour-io/postcssify-test-subject-dep2.git#master"
   },
-  "engines": {}
+  "engines": {},
+  "browserify": {
+    "transform": [
+      ["postcssify", {
+        "plugins": [
+          "postcss-cssnext"
+        ]
+      }]
+    ]
+  }
 }
