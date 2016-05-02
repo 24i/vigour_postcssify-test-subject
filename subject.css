@@ -1,0 +1,12 @@
+:root {
+  --subject: 1px;
+  --common: url('subject');
+}
+
+#subject {
+  border: var(--subject);
+}
+
+#common {
+  background: var(--common);
+}
